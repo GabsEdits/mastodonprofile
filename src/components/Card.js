@@ -4,7 +4,8 @@ import Link from "next/link";
 import ThemeContext from "@/ThemeContext";
 
 const Card = (props) => {
-	const { bannerColor, github, name, username, about } = props;
+	const { bannerColor, github, name, username, about, server } = props;
+	
 	const aboutLink = about.includes("http");
 	const { theme } = useContext(ThemeContext);
 
@@ -21,7 +22,7 @@ const Card = (props) => {
 	return (
 		<>
 			{/* design a card using tailwind css good ui */}
-			<div className=" w-full shadow h-auto overflow-hidden border border-gray-700 hover:border-gray-600 hover:scale-[1.006] rounded-xl">
+			<div className=" w-full shadow h-auto overflow-hidden  hover:scale-[1.006] rounded-xl">
 				<div
 					className={`${
 						theme == "dark" ? "bg-[#080808]" : "bg-white"
@@ -46,14 +47,14 @@ const Card = (props) => {
 							<div className="flex items-baseline gap-1">
 								<p className="mt-2 font-bold text-lg md:text-xl">{name}</p>
 								<Link
-									href={`https://twitter.com/${username}`}
+									href={`https://${server}/@${username}`}
 									target="_blank"
 									rel="noopener noreferrer"
 									className={`mt-2 font-mono italic ${
 										theme == "dark" ? "text-gray-300" : "text-black"
-									} text-sm hover:text-blue-400 cursor-pointer`}
+									} text-xs hover:text-blue-400 cursor-pointer`}
 								>
-									@{username}
+									@{username}@{server}
 								</Link>
 							</div>
 						</div>
@@ -81,7 +82,7 @@ const Card = (props) => {
 							<Link
 								href={`https://github.com/${github}`}
 								target="_blank"
-								rel="noopener noreferrer"
+								rel="noopener noreferrer://${server"
 								className={`col-span-1 py-2 text-sm font-medium ${
 									theme == "dark"
 										? "bg-gray-700 text-white hover:bg-gray-600"
@@ -91,7 +92,7 @@ const Card = (props) => {
 								Follow on <i className="bi bi-github"></i>
 							</Link>
 							<Link
-								href={`https://x.com/${username}`}
+								href={`https://${server}/@${username}`}
 								target="_blank"
 								rel="noopener noreferrer"
 								className={`col-span-1 py-2 text-sm font-medium ${
@@ -100,7 +101,7 @@ const Card = (props) => {
 										: "bg-white border border-gray-700 text-black  hover:bg-gray-200"
 								} rounded focus:outline-none focus:ring`}
 							>
-								Follow on 𝕏
+								Follow on <i className="bi bi-mastodon"></i>
 							</Link>
 						</div>
 					</div>

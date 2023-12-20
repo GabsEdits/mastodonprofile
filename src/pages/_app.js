@@ -13,31 +13,31 @@ export default function App({ Component, pageProps }) {
 		<>
 			<Head>
 				<meta charSet="utf-8" />
-				<title>𝕏 Profile - Your Twitter Profile Card</title>
-				<link rel="icon" href="/x_large.png" />
+				<title>Mastodon Profile - Your Mastodon Profile Card</title>
+				<link rel="icon" href="/logo-white.svg" />
 				<meta name="viewport" content="width=device-width,initial-scale=1" />
 				<meta name="theme-color" content="#171717" />
 				<meta
 					name="keywords"
-					content="X, Twitter, Twitter Profile, X Profile Card, Open Source, github, typescript, nextjs, hellofaizan portfolio"
+					content="Mastodon, Mastodon Profile, Mastodon Profile Card, Open Source, github, typescript, nextjs, hellofaizan portfolio"
 				/>
-				<meta name="description" content="Showcase your 𝕏 profile to world" />
-				<meta name="author" content="Hello Faizan" />
+				<meta name="description" content="Showcase your Mastodon profile to world" />
+				<meta name="author" content="Gabriel Cozma" />
 				<link rel="apple-touch-icon" href="/x_large.png" />
 
 				<meta
 					property="og:title"
-					content="𝕏 Profile - Your Twitter Profile Card"
+					content="Mastodon Profile - Your Twitter Profile Card"
 				/>
 				<meta
 					property="og:site_name"
-					content="Showcase your 𝕏 profile to world"
+					content="Showcase your Mastodon profile to world"
 				/>
 				<meta property="og:url" content="https://xprofile.hellofaizan.me" />
 
 				<meta
 					property="og:description"
-					content="Showcase your 𝕏 profile to world and get recommendations from community."
+					content="Showcase your Mastodon profile to world and get recommendations from community."
 				/>
 
 				<meta
@@ -52,11 +52,11 @@ export default function App({ Component, pageProps }) {
 				<meta name="twitter:creator" content="@HelloFaizaan" />
 				<meta
 					name="twitter:title"
-					content="𝕏 Profile - Your Twitter Profile Card"
+					content="Mastodon Profile - Your Twitter Profile Card"
 				/>
 				<meta
 					name="twitter:description"
-					content="Showcase your 𝕏 profile to world and get recommendations from community."
+					content="Showcase your Mastodon profile to world and get recommendations from community."
 				/>
 				<meta
 					name="twitter:image"

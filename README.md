@@ -1,40 +1,38 @@
-# 𝕏 Profile Card
-
-> [!NOTE]
-> Working on version 2 with a lot of features. [Have a look by clicking here](https://github.com/Youth-Icon/xprofile)
-> also [join Discord](https://discord.gg/vUHMxPvege) to discuss upcoming features
-
-A website to list your Twitter ( 𝕏 ) and Github profile to the world
-
+<div align="center">
+<h1>Mastodon Profile Card</h1>
+<p>A website to list your Mastodon and GitHub profile to the world</p>
+</div>
 
 ![image](https://github.com/hellofaizan/xprofile/assets/84437051/5b463c7d-4488-4743-8e56-f0cf31c6ba3d)
 
 
+## Credits
+Fork of [XProfile](https://github.com/hellofaizan/xprofile), ❤️ for making this project. This fork just changes the code to link to your Mastodon Server.
 
 ## Languages/Tools
 
-<a href="https://discord.gg/EHthxHRUmr">
     <img src="https://skillicons.dev/icons?i=next,js,react,firebase" />
-  </a>
 
 ## 👩🏽‍💻 Demo
 
-Check out the website: [𝕏 Profiles](https://x.hellofaizan.me)
+Check out the website: [Mastodon Profiles](https://mastodon.gxbs.me)
 
 ## 👇🏽 File Format
 ```json
     ,{
-        "username": "hellofaizaan",
-        "name": "Hello Faizan",
-        "github": "hellofaizan",
-        "banner_color": "#ff2500",
-        "about": "I am a full stack developer and a competitive programmer. I love Chess♟️ also https://hellofaizan.me/"
+        "server": "fosstodon.org",
+        "username": "gabs",
+        "name": "Gabriel Cozma",
+        "github": "GabsEdits",
+        "banner_color": "#fff",
+        "about": "Human | gabs.eu.org"
     }
 ```
 
 | Key  | Value                                                                                  |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| username | This value should be your Twitter (𝕏) username.|
+| server | This value should be your Mastodon server that you are apart of.|
+| username | This value should be your Mastodon username.|
 | name | This value should be your real name. |
 | github | The value should be your Github username                   |
 | banner_color | The value should contain any hex code for background just like Twitter eg: #fff, #000   |
@@ -47,7 +45,7 @@ Check out the website: [𝕏 Profiles](https://x.hellofaizan.me)
 
 1. Fork the project:
 
-- [Fork](https://github.com/hellofaizan/xprofile/fork) the project. Click on the <a href="https://github.com/hellofaizan/xprofile/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started.
+- [Fork](https://github.com/hellofaizan/mastodonprofile/fork) the project. Click on the <a href="https://github.com/hellofaizan/xprofile/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started.
 
 2. Create a New Branch:
 
@@ -84,32 +82,10 @@ yarn run dev
 
 ## 💪🏽 Contributors
 
-Thank you all so much for spending your time to improve 𝕏 Profile.
+Thank you all so much for spending your time to improve Mastodon Profile.
 
 <a href="https://github.com/hellofaizan/xprofile/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hellofaizan/xprofile" />
+  <img src="https://contrib.rocks/image?repo=gabsedits/mastodonprofile" />
 </a>
-
-## Repository Activity
-
-![Alt](https://repobeats.axiom.co/api/embed/3c905c2b26fc447eb080acba085a899468acd7e3.svg "Repobeats analytics image")
-
-## Star History
-
-<a href="https://star-history.com/#hellofaizan/xprofile&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hellofaizan/xprofile&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=hellofaizan/xprofile&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=hellofaizan/xprofile&type=Date" />
-  </picture>
-</a>
-
-
-# Join Discord 💻
-
-<a href="https://discord.gg/vUHMxPvege">
-     <img src="https://invidget.switchblade.xyz/vUHMxPvege" width="400" height="100" />
-</a>
-<hr/>
 
 ## Drop a ⭐ if you like this project

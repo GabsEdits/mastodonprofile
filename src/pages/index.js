@@ -93,18 +93,18 @@ const Home = () => {
 					transition={{ duration: 0.2 }}
 				>
 					<header className="">
-						<div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+						<div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-6">
 							<div className="flex h-16 items-center justify-between">
 								<div className="md:flex md:items-center md:gap-12">
 									<div className="block">
 										<span className="sr-only">Home</span>
 										<Image
 											src={
-												theme == "dark" ? "/x_large.png" : "/x_logo_dark.png"
+												theme == "dark" ? "/logo-white.svg" : "/logo-black.svg"
 											}
 											alt="Logo"
-											width={40}
-											height={40}
+											width={30}
+											height={30}
 											priority
 										/>
 									</div>
@@ -119,9 +119,9 @@ const Home = () => {
 												type="text"
 												onChange={(e) => setSearch(e.target.value)}
 												id="simple-search"
-												className={`border border-gray text-sm rounded-lg block shadow w-full pl-3 p-2.5  ${theme == "light" ? "bg-white" : "bg-[#0e0e0e]"
-													}  border-gray-600 placeholder-gray-400 ${theme == "dark" ? "text-white" : "text-black"
-													} focus:ring-blue-500 focus:border-blue-500`}
+												className={`text-sm rounded-full block shadow w-full pl-3 p-2.5  ${theme == "light" ? "bg-white" : "bg-[#0e0e0e]"
+													}   placeholder-gray-400 ${theme == "dark" ? "text-white" : "text-black"
+													} focus:ring-blue-500`}
 												placeholder="Search by Name or Username..."
 												required
 											></input>
@@ -134,10 +134,10 @@ const Home = () => {
 											onClick={toggleTheme}
 											target="_blank"
 											rel="noopener noreferrer"
-											className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
+											className={`rounded-full bg-[#0e0e0e] ${theme == "dark"
 												? "text-white hover:bg-gray-600"
-												: "bg-white hover:bg-gray-300 text-black"
-												} border border-gray-600 px-3 py-2.5 text-sm font-medium  shadow`}
+												: "bg-gray-100 hover:bg-gray-300 text-black"
+												}   px-3 py-2.5 text-sm font-medium  shadow`}
 										>
 											{theme == "dark" ? (
 												<i className="bi bi-moon-fill"></i>
@@ -146,47 +146,36 @@ const Home = () => {
 											)}
 										</button>
 										<Link
-											href={"https://x.com/hellofaizaan"}
+											href={"https://fosstodon.org/gabs"}
 											target="_blank"
 											rel="noopener noreferrer"
-											className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
+											className={`rounded-full bg-[#0e0e0e] ${theme == "dark"
 												? "text-white hover:bg-gray-600"
-												: "bg-white hover:bg-gray-300 text-black"
-												} border hidden sm:block border-gray-600 px-4 py-2.5 text-sm font-bold shadow`}
+												: "bg-gray-100 hover:bg-gray-300 text-black"
+												}  hidden sm:block px-4 py-2.5 text-sm font-bold`}
 										>
-											𝕏
+											<i className="bi bi-mastodon"></i>
 										</Link>
 										<Link
-											href={"https://github.com/hellofaizan"}
+											href={"https://github.com/GabsEdits"}
 											target="_blank"
 											rel="noopener noreferrer"
-											className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
+											className={`rounded-full bg-[#0e0e0e] ${theme == "dark"
 												? "text-white hover:bg-gray-600"
-												: "bg-white hover:bg-gray-300 text-black"
-												} border hidden sm:block border-gray-600 px-4 py-2.5 text-sm font-medium shadow`}
+												: "bg-gray-100 hover:bg-gray-300 text-black"
+												} hidden sm:block px-4 py-2.5 text-sm font-medium shadow`}
 										>
 											<i className="bi bi-github"></i>
 										</Link>
 										<Link
-											href={"https://discord.com/invite/vUHMxPvege"}
+											className={`rounded-full bg-[#0e0e0e] ${theme == "dark"
+												? "text-white hover:bg-gray-600"
+												: "bg-gray-100 hover:bg-gray-300 text-black"
+												}  hidden  sm:block px-4 py-2.5 text-sm font-medium shadow`}
+											href="https://github.com/GabsEdits/mastodonprofile"
 											target="_blank"
 											rel="noopener noreferrer"
-											className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
-												? "text-white hover:bg-gray-600"
-												: "bg-white hover:bg-gray-300 text-black"
-												} border hidden sm:block border-gray-600 px-4 py-2.5 text-sm font-medium  shadow`}
-										>
-											<i className="bi bi-discord"></i>
-										</Link>
-										<Link
-											className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
-												? "text-white hover:bg-gray-600"
-												: "bg-white hover:bg-gray-300 text-black"
-												} border border-gray-600 hidden  sm:block px-4 py-2.5 text-sm font-medium shadow`}
-											href="https://github.com/hellofaizan/xprofile"
-											target="_blank"
-											rel="noopener noreferrer"
-											title="Add your 𝕏 (Twitter) Profile to this list :)"
+											title="Add your Mastodon Profile to this list :)"
 										>
 											Contribute ⭐
 										</Link>
@@ -201,9 +190,9 @@ const Home = () => {
 													type="text"
 													onChange={(e) => setSearch(e.target.value)}
 													id="simple-search"
-													className={`border border-gray text-sm rounded-lg block w-full pl-3 p-2.5  ${theme == "light" ? "bg-white" : "bg-[#0e0e0e]"
-														}  border-gray-600 placeholder-gray-400 ${theme == "dark" ? "text-white" : "text-black"
-														} focus:ring-blue-500 shadow focus:border-blue-500`}
+													className={`text-sm rounded-lg block w-full pl-3 p-2.5  ${theme == "light" ? "bg-white" : "bg-[#0e0e0e]"
+														}  placeholder-gray-400 ${theme == "dark" ? "text-white" : "text-black"
+														} focus:ring-blue-500 shadow `}
 													placeholder="Search user profile..."
 													required
 												></input>
@@ -213,7 +202,7 @@ const Home = () => {
 												className={`rounded-md bg-[#0e0e0e] ${theme == "dark"
 													? "text-white hover:bg-gray-600"
 													: "bg-white hover:bg-gray-300 text-black"
-													} border border-gray-600 px-3 ml-1 py-2.5 text-sm font-medium  shadow`}
+													} px-3 ml-1 py-2.5 text-sm font-medium  shadow`}
 											>
 												⭐
 											</Link>
@@ -274,6 +263,7 @@ const Home = () => {
 															username={user.username}
 															github={user.github}
 															about={user.about}
+															server={user.server}
 														/>
 													))
 											)}
