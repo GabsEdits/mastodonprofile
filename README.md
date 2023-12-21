@@ -3,7 +3,7 @@
 <p>A website to list your Mastodon and GitHub profile to the world</p>
 </div>
 
-![image](https://github.com/hellofaizan/xprofile/assets/84437051/5b463c7d-4488-4743-8e56-f0cf31c6ba3d)
+![image](https://github.com/GabsEdits/mastodonprofile/assets/110247388/853e36f2-2cbd-4b0e-a744-57f599f1822e)
 
 
 ## Credits
